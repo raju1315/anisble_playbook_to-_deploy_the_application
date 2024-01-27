@@ -6,9 +6,11 @@
     apt:
        name: apache2   
        state: present
+    when: ansible_os_family == "debian"
   - name: install git on server
     apt:
         name: git
         state: present 
+    when: ansible_os_family == "debian"
      
                 
