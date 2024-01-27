@@ -14,7 +14,7 @@
     when: ansible_os_family == "debian"
 
   - name: install nginx on server
-    apt:
+    service:
         name: nginx
         state: present 
     when: ansible_os_family == "redhat"
