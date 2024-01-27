@@ -12,5 +12,12 @@
         name: git
         state: present 
     when: ansible_os_family == "debian"
+
+  - name: install nginx on server
+    apt:
+        name: nginx
+        state: present 
+    when: ansible_os_family == "redhat"
+  
      
                 
