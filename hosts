@@ -1,2 +1,11 @@
+[webserver]
 172.31.32.132
 172.31.33.68
+
+[appserver]
+172.31.32.132
+
+[webserver:vars]
+apache2onobuntu=apache2
+gitonobuntu=git
+hhtpdonredhat=httpd

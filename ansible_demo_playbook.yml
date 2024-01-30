@@ -1,21 +1,26 @@
 ---
-- hosts: all
+- hosts: webserver
   become: yes
   tasks:
   - name: install apache2 on server
     apt:
-       name: apache2   
+       name: "{{apache2onobuntu}}"  
        state: present
     when: ansible_os_family == "debian"
   - name: install git on server
     apt:
-        name: git
+        name: "{{gitonobuntu}}"
         state: present 
     when: ansible_os_family == "debian"
 
   - name: install nginx on server
     service:
         name: nginx
+        state: present 
+    when: ansible_os_family == "redhat"
+  - name: install httpd on server 
+    service:
+        name: "{{hhtpdonredhat}}"
         state: present 
     when: ansible_os_family == "redhat"
   
