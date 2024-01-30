@@ -3,9 +3,9 @@
 172.31.33.68
 
 [appserver]
-172.31.32.132
+172.31.33.68
 
 [webserver:vars]
 apache2onobuntu=apache2
-gitonobuntu=git
+gitonobuntu=git 
 hhtpdonredhat=httpd

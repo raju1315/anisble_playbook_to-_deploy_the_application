@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: appserver
   become: yes
   tasks:
   - name: install apache2 on server
