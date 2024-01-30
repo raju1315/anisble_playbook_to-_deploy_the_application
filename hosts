@@ -8,4 +8,5 @@
 [webserver:vars]
 apache2onobuntu=apache2
 gitonobuntu=git 
-hhtpdonredhat=httpd
+httpdsonredhat=httpd
+myjavaonobuntu=openjdk-11-jdk

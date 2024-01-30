@@ -1,5 +1,5 @@
 ---
-- hosts: appserver
+- hosts: hostvars
   become: yes
   tasks:
   - name: install apache2 on server
@@ -7,9 +7,9 @@
        name: "{{apache2onobuntu}}"  
        state: present
     when: ansible_os_family == "debian"
-  - name: install git on server
+  - name: install java on server
     apt:
-        name: "{{gitonobuntu}}"
+        name: "{{myjavaonobuntu}}"
         state: present 
     when: ansible_os_family == "debian"
 
