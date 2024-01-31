@@ -15,4 +15,4 @@
        name: python3-pip
        state: present
     tags: pipinstalled   
-    when:  myresult.stderr == ""     
+    #when:  myresult.stderr == ""     
