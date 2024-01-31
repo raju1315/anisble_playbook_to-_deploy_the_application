@@ -2,7 +2,7 @@
 - hosts: 172.31.33.68
   become: yes
   tasks:
-  - name : file handling
+  - name : file creation
     file:
        path: /home/ubuntu/file1.txt
        state: touch
