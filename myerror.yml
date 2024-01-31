@@ -7,8 +7,8 @@
      var03: wget
   tasks:
   - name: i want display var03
-    debugg: 
-       msg: "{{var03}}" 
+    debug: 
+       msgg: "{{var03}}" 
     ignore_errors: true    
   - name: i want display var03
     debug: 
