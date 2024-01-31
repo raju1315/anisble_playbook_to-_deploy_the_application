@@ -5,11 +5,14 @@
   - name : execute linux command
     command: hostname -f
     register: myresult
+    tags: mycommand result
   - name: i want to see task result
     debug:
        msg: "{{myresult}}"
+    tags: mytaskresult   
   - name: install pip
     apt:
        name: python3-pip
        state: present
+    tags: pipinstalled   
     when:  myresult.stderr == ""     
