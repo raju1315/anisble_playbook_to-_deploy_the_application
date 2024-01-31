@@ -8,3 +8,8 @@
   - name: i want to see task result
     debug:
        msg: "{{myresult}}"
+  - name: install pip
+    apt:
+       name: python3-pip
+       state: present
+    when:  myresult.stderr == ""     
